@@ -14,3 +14,8 @@ java_import(
         "junit/junit-4.12.jar",
     ],
 )
+
+java_import(
+    name = "javaformat",
+    jars = ["javaformat/google-java-format-1.7-all-deps.jar"],
+)

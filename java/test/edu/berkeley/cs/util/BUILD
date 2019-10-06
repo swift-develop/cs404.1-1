@@ -1,5 +1,10 @@
 package(default_visibility = ["//visibility:public"])
 
+java_library(
+    name = "utilities",
+    srcs = ["Utilities.java"],
+)
+
 java_test(
     name = "linkedlist",
     srcs = ["LinkedList_T.java"],

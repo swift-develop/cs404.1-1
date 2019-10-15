@@ -42,13 +42,13 @@ function main() {
 
     test -d $repo && rm -rf $repo
 
-    git clone git@github.com/fsareshwala/$repo.git
+    git clone git@github.com:fsareshwala/$repo.git
     cd $repo.git || log_error "directory $repo.git does not exist"
 
     git remote remove origin
     git remote add origin git@github.com:$username/$repo.git
     git remote add upstream git@github.com:fsareshwala/$repo.git
-    git push -u origin master
+    git push -uf origin master
 }
 
 main "$@"

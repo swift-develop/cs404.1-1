@@ -67,7 +67,7 @@ hosting platform.
     - Execute the following command in a new terminal
     - **Note**: make sure to replace `username` in the command with your GitHub username
     ```
-    curl https://raw.githubusercontent.com/fsareshwala/cs404.1/master/bootstrap.sh | bash username
+    curl https://raw.githubusercontent.com/fsareshwala/cs404.1/master/bootstrap.sh | bash -s username
     ```
     - You will now have a directory named `cs404.1` where you executed the command above. This is
       your assignment directory where you will do your work.

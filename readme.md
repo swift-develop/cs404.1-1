@@ -71,6 +71,10 @@ hosting platform.
   ```
   - You will now have a directory named `cs404.1` where you executed the command above. This is your
     assignment directory where you will do your work.
+- Identify yourself within your repository
+  - Add your name to the `name.md` file in the top level root of the repository
+  - Commit the addition and push the change to GitHub
+  - This is how I know who the repository belongs to
 - Select an IDE (Integrated Development Environment)
   - [IntelliJ IDEA](https://www.jetbrains.com/idea)
   - [VSCode](https://code.visualstudio.com)

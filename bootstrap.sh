@@ -43,7 +43,7 @@ function main() {
     test -d $repo && rm -rf $repo
 
     git clone git@github.com:fsareshwala/$repo.git
-    cd $repo.git || log_error "directory $repo.git does not exist"
+    cd $repo || log_error "directory $repo does not exist"
 
     git remote remove origin
     git remote add origin git@github.com:$username/$repo.git

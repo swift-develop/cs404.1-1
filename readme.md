@@ -56,28 +56,28 @@ hosting platform.
 - Ensure you have a GitHub account, have verified your email address, and are signed in
 - Set up [SSH access with GitHub](https://help.github.com/en/articles/connecting-to-github-with-ssh)
 - [Create a new repository](https://github.com/new) on GitHub
-    - Name your repository `cs404.1`
-    - Ensure the repository is marked private
-    - Create the repository
+  - Name your repository `cs404.1`
+  - Ensure the repository is marked private
+  - Create the repository
 - Add `fsareshwala` as a collaborator
-    - Visit the `Settings` tab
-    - Select the `Collaborators` section on the left
-    - Add the `fsareshwala` user as a collaborator to your repository
+  - Visit the `Settings` tab
+  - Select the `Collaborators` section on the left
+  - Add the `fsareshwala` user as a collaborator to your repository
 - Bootstrap your repository
-    - Execute the following command in a new terminal
-    - **Note**: make sure to replace `username` in the command with your GitHub username
-    ```
-    curl https://raw.githubusercontent.com/fsareshwala/cs404.1/master/bootstrap.sh | bash -s username
-    ```
-    - You will now have a directory named `cs404.1` where you executed the command above. This is
-      your assignment directory where you will do your work.
+  - Execute the following command in a new terminal
+  - **Note**: make sure to replace `username` in the command with your GitHub username
+  ```
+  curl https://raw.githubusercontent.com/fsareshwala/cs404.1/master/bootstrap.sh | bash -s username
+  ```
+  - You will now have a directory named `cs404.1` where you executed the command above. This is your
+    assignment directory where you will do your work.
 - Select an IDE (Integrated Development Environment)
-    - [IntelliJ IDEA](https://www.jetbrains.com/idea)
-    - [VSCode](https://code.visualstudio.com)
-    - **Note**: selection of an IDE is optional. It is up to you to determine whichever development
-      environment works best for your personal tastes. As such, detailed instructions on how to
-      perform various environment related operations won't be provided. I assume that by this stage
-      of your software engineering career, you are familiar with your tools of choice.
+  - [IntelliJ IDEA](https://www.jetbrains.com/idea)
+  - [VSCode](https://code.visualstudio.com)
+  - **Note**: selection of an IDE is optional. It is up to you to determine whichever development
+    environment works best for your personal tastes. As such, detailed instructions on how to
+    perform various environment related operations won't be provided. I assume that by this stage of
+    your software engineering career, you are familiar with your tools of choice.
 - Install the [Bazel](https://bazel.build) plugin for your selected IDE
 - Install the [Google Java Formatter](https://github.com/google/google-java-format) plugin for your
   selected IDE

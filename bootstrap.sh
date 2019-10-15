@@ -46,8 +46,8 @@ function main() {
     cd $repo || log_error "directory $repo does not exist"
 
     git remote remove origin
-    git remote add origin git@github.com:$username/$repo.git
-    git remote add upstream git@github.com:fsareshwala/$repo.git
+    git remote add -f origin git@github.com:$username/$repo.git
+    git remote add -f upstream git@github.com:fsareshwala/$repo.git
     git push -uf origin master
 }
 

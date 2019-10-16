@@ -2,3 +2,4 @@ bazel-*
 .ijwb
 .idea
 *.tags
+.DS_Store

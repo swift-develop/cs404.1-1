@@ -24,6 +24,10 @@ information should look exactly like the following:
 
 Hint: use the `date`, `whoami`, `pwd`, `realpath`, and `echo` commands.
 
+Note: `realpath` is not available by default on Mac OS. To get it, install it using homebrew:
+
+    brew install coreutils
+
 `sum.sh`
 --------
 Write a shell script that takes a list of numbers as command line arguments. The output is the sum

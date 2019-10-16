@@ -44,8 +44,19 @@ public class SplayList_T {
   }
 
   @Test
-  public void testContainsEmptyList() {
-    Assert.assertTrue(list.isEmpty());
+  public void testContains() {
+    int size = 10;
+
+    Assert.assertEquals(0, list.size());
+    for (int i = 0; i < size; i++) {
+      list.insertEnd(i);
+    }
+    Assert.assertEquals(size, list.size());
+
+    Assert.assertFalse(list.contains(size + 1));
+    for (int i = 0; i < size; i++) {
+      Assert.assertTrue(list.contains(i));
+    }
   }
 
   @Test

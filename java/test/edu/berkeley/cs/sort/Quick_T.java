@@ -1,11 +1,10 @@
 package edu.berkeley.cs.sort;
 
 import edu.berkeley.cs.util.Utilities;
+import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 public class Quick_T {
   private int n = 1000;

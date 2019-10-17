@@ -41,15 +41,15 @@ formatting the code in adherence to the style guide.
 
 In order to format your code, simply run `format.sh` from the top level repository root.
 
+Submitting Your Work
+--------------------
+Submit your work by committing your changes and pushing them upstream before the due date.
+
 Grading
 -------
 Each program description will include a command that will be used to run tests for the code you
 write in each assignment. The percentage of tests that pass will be your final grade for the
 assignment.
-
-Submitting Your Work
---------------------
-Submit your work by committing your changes and pushing them upstream before the due date.
 
 Student Setup
 -------------

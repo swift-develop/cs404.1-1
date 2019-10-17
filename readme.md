@@ -33,13 +33,17 @@ Code Style and Code Formatting
 ------------------------------
 As a general rule, it is very important to keep source code in a consistent format. Most companies
 have an established coding style for each language that they develop in. For this course, we will be
-using the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html).
+using Google's style guides for each language:
+
+- Java: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+- Python: [Google Python Style Guide](http://google.github.io/styleguide/pyguide.html)
 
 While it is useful to read the style guide and understand why the decisions were made as they were,
 no one can expect to remember every detail every time. Therefore, we have tooling to help in
 formatting the code in adherence to the style guide.
 
-In order to format your code, simply run `format.sh` from the top level repository root.
+In order to format your code, simply run `format.sh` from the top level repository root. This script
+formats all supported languages within the repository.
 
 Submitting Your Work
 --------------------

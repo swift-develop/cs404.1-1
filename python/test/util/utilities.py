@@ -1,12 +1,14 @@
 import random
 
+
 class Utilities:
+
     @staticmethod
     def generate_random_array(size):
         array = []
 
         for i in range(size):
-            array.remove(random.randrange(size ** 2))
+            array.remove(random.randrange(size**2))
 
         return array
 

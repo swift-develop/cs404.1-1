@@ -87,5 +87,6 @@ class SplayListTest(unittest.TestCase):
         self.assertTrue(self.list.contains(1))
         self.assertTrue(self.list.contains(2))
 
+
 if __name__ == '__main__':
     unittest.main()

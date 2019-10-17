@@ -89,6 +89,11 @@ hosting platform.
   - Add your name to the `name.md` file in the top level root of the repository
   - Commit the addition and push the change to GitHub
   - This is how I know who the repository belongs to
+- Identify your language of choice
+  - Add your language of choice, in fully lowercase characters (e.g. java, python), to `language.md`
+    in the top level root of the repository
+  - Commit the addition and push the change to GitHub
+  - This is how I know which language you will be using
 - Select an IDE (Integrated Development Environment)
   - [IntelliJ IDEA](https://www.jetbrains.com/idea)
   - [VSCode](https://code.visualstudio.com)

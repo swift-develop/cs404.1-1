@@ -12,6 +12,15 @@ not change or delete:
 - Any of the code or tests already present
 - Any of the interfaces, APIs, or methods already present
 
+Supported Languages
+-------------------
+Quite a bit of work goes into preparing the course and the repository to use a particular language
+(e.g. starter code, unit tests, solutions, etc). Currently, this course is offered in the following
+languages. Other languages may be offered in the future.
+
+- Java
+- Python
+
 Use of Java Standard Library
 ----------------------------
 This course focuses on data structures, algorithms, and their implementations. As such, in order for

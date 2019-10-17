@@ -100,4 +100,5 @@ hosting platform.
 Contributing
 ------------
 If you find any issues within this repository while completing your assignments, please
-[open an issue](https://github.com/fsareshwala/cs404.1/issues/new) in the issue tracker.
+[open an issue](https://github.com/fsareshwala/cs404.1/issues/new) in the issue tracker. Better yet,
+please open a pull request against the repository and I will be happy to merge it in.

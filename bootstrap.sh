@@ -2,9 +2,7 @@
 
 # This script bootstraps student environments with a private fork of the public assignment
 # repository. You should not run this script from a clone of the repository. Rather, run this script
-# directly:
-#
-#   curl https://raw.githubusercontent.com/fsareshwala/cs404.1/master/bootstrap.sh | bash username
+# directly using the instructions in the readme.md file.
 
 function log_error() {
     echo "error: $1"

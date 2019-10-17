@@ -21,11 +21,11 @@ languages. Other languages may be offered in the future.
 - Java
 - Python
 
-Use of Java Standard Library
-----------------------------
+Use of the Standard Library
+---------------------------
 This course focuses on data structures, algorithms, and their implementations. As such, in order for
 you to learn about their internals, you must first implement them yourself. Therefore, in this
-course, you may not use or import any Java standard library data structures or algorithms, unless
+course, you may not use or import any standard library data structures or algorithms, unless
 expressly permitted. If you need access to a particular data structure or algorithm, you must
 implement it.
 

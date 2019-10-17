@@ -6,10 +6,11 @@ use when completing their assignments.
 Starter Code
 ------------
 This repository contains various pieces of starter code that provide a skeleton and will help you
-get started on your assignments. When working with this starter code, please remember that:
+get started on your assignments. When working with this starter code, please remember that you may
+not change or delete:
 
-- You may not change or delete any of the code or tests already present
-- You may not change or delete any of the interfaces, APIs, or methods already present
+- Any of the code or tests already present
+- Any of the interfaces, APIs, or methods already present
 
 Use of Java Standard Library
 ----------------------------

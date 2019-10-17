@@ -93,14 +93,6 @@ function test_seq_negative_numbers() {
     assert_equals "$expected" "$actual"
 }
 
-function test_seq_noninteger_arguments() {
-    disable_errexit
-    $seq_path a b > /dev/null
-    if [[ $? != 1 ]]; then
-        fail 'seq.sh with noninteger arguments did not result in exit status 1'
-    fi
-}
-
 function test_stdio_no_files() {
     dir=$(mktemp -d)
     $stdio_path $dir

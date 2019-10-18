@@ -16,17 +16,19 @@ class CalculatorTest(unittest.TestCase):
 
     def test_multiplication_division_precedence(self):
         self.assertAlmostEqual(14, Calculator.evaluate('2 + 3 * 4'))
-        self.assertAlmostEqual(2.66, Calculator.evaluate('2 / 3 * 4'))
+        self.assertAlmostEqual(2.66, Calculator.evaluate('2 / 3 * 4'), 1)
 
     def test_exponent_precedence(self):
         self.assertAlmostEqual(32, Calculator.evaluate('2 ^ 3 * 4'))
         self.assertAlmostEqual(-5, Calculator.evaluate('3 - 2 ^ 3'))
 
     def test_missing_operand(self):
-        self.assertRaises(Calculator.evaluate('1 + 2 - '))
+        with self.assertRaises(Exception):
+            Calculator.evaluate('1 + 2 - ')
 
     def test_missing_operator(self):
-        self.assertRaises(Calculator.evaluate('1 2'))
+        with self.assertRaises(Exception):
+            Calculator.evaluate('1 2')
 
     def test_parenthesis(self):
         self.assertAlmostEqual(-4, Calculator.evaluate('( 2 - 3 ) * 4'))
@@ -34,10 +36,12 @@ class CalculatorTest(unittest.TestCase):
         self.assertAlmostEqual(4, Calculator.evaluate('2 * ( 3 - 1 )'))
 
     def test_mismatched_parenthesis_left(self):
-        self.assertRaises(Calculator.evaluate('( ( 3 - 2 ) * 4'))
+        with self.assertRaises(Exception):
+            Calculator.evaluate('( ( 3 - 2 ) * 4')
 
     def test_mismatched_parenthesis_right(self):
-        self.assertRaises(Calculator.evaluate('( 3 - 2 ) * 4)'))
+        with self.assertRaises(Exception):
+            Calculator.evaluate('( 3 - 2 ) * 4 )')
 
 
 if __name__ == '__main__':

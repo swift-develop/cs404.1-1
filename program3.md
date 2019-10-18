@@ -1,6 +1,6 @@
 Program 3
 ---------
-In this assignment, you will implement and make improvements to some mergesort and quicksort
+In this assignment, you will implement and make improvements to various sorting algorithms.
 
 Before beginning on this assignment, make sure to read the abstract `Sort` class in
 `java/src/edu/berkeley/cs/sort/Sort.java`. Within this file, there are some already implemented

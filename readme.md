@@ -94,17 +94,18 @@ hosting platform.
     in the top level root of the repository
   - Commit the addition and push the change to GitHub
   - This is how I know which language you will be using
-- Select an IDE (Integrated Development Environment)
+- Optional: Select an IDE (Integrated Development Environment)
   - [IntelliJ IDEA](https://www.jetbrains.com/idea)
   - [VSCode](https://code.visualstudio.com)
-  - **Note**: selection of an IDE is optional. It is up to you to determine whichever development
-    environment works best for your personal tastes. As such, detailed instructions on how to
-    perform various environment related operations won't be provided. I assume that by this stage of
-    your software engineering career, you are familiar with your tools of choice.
-- Install the [Bazel](https://bazel.build) plugin for your selected IDE
-- Install the [Google Java Formatter](https://github.com/google/google-java-format) plugin for your
-  selected IDE
-- Load your assignment repository in your IDE and ensure you can compile and run programs and tests
+  - **Note**: It is up to you to determine whichever development environment works best for your
+    personal tastes. As such, detailed instructions on how to perform various environment related
+    operations won't be provided. I assume that by this stage of your software engineering career,
+    you are familiar with your tools of choice.
+- Optional: Install the [Bazel](https://bazel.build) plugin for your selected IDE
+- Optional: Install the [Google Java Formatter](https://github.com/google/google-java-format) plugin
+  for your selected IDE
+- Load your assignment repository in your environment (e.g. IDE) and ensure you can compile and run
+  programs and tests
 
 Contributing
 ------------

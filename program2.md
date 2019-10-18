@@ -5,23 +5,27 @@ lists, stacks, and queues.
 
 Doubly Linked List
 ------------------
-Fill in the empty method stubs in `java/src/edu/berkeley/cs/util/LinkedList.java` with the
-implementation for a doubly linked list. Ensure that your implementation has `O(1)` runtime for the
-following operations:
+Fill in the empty method stubs in the linked list class  with the implementation for a doubly linked
+list. Ensure that your implementation has `O(1)` runtime for the following operations:
 
-- `insertFront(...)`
-- `insertEnd(...)`
-- `removeFront(...)`
-- `removeEnd(...)`
-- `front(...)`
-- `back(...)`
-- `size(...)`: track the size of the list in a variable, update when `insert/remove` methods called
-- `isEmpty(...)`
+- Insert front
+- Insert end
+- Remove front
+- Remove end
+- Front
+- Back
+- Size: track the size of the list in a variable, update when `insert/remove` methods called
+- Is empty
 
 Note: data structure operations are tricky to do in your head. For example, `remove(...)` has a lot
 of corner cases and can be tricky to get right. Try drawing out the data structure on a piece of
 paper, working through each individual step of the operations above, and then converting the steps
 to code.
+
+The files you will need (depending on the language you are working in) for this exercise are:
+
+- Java: `java/src/edu/berkeley/cs/util/LinkedList.java`
+- Python: `python/src/util/linkedlist.py`
 
 Move to Front
 -------------
@@ -32,17 +36,26 @@ migrate toward the front of the list, whereas less frequently accessed items ten
 the end of the list. Consequently, the time complexity of `contains(...)` is often much less than
 `O(n)` because the most frequently accessed items tend to require the least searching.
 
-Extend the `LinkedList` class in `java/src/edu/berkeley/cs/util/SplayList.java` to implement the
-move-to-front heuristic for linked lists.
+Extend the `LinkedList` class in to implement the move-to-front heuristic for linked lists.
 
 Note: `front(...)` and `back(...)` should not implement the move-to-front heuristic.
+
+The files you will need (depending on the language you are working in) for this exercise are:
+
+- Java: `java/src/edu/berkeley/cs/util/SplayList.java`
+- Python: `python/src/util/splaylist.py`
 
 Stack and Queue
 ---------------
 A completed stack and queue implementation is available in the following files:
 
+Java:
 - `java/src/edu/berkeley/cs/util/Stack.java`
 - `java/src/edu/berkeley/cs/util/Queue.java`
+
+Python:
+- `python/src/util/stack.py`
+- `python/src/util/queue.py`
 
 The stack and queue implementations are simply wrappers around the linked list implementation that
 you wrote in the previous section of this assignment. Reusing the doubly linked list class in this
@@ -50,8 +63,13 @@ way allowed us to create a whole new set of data structures, simply by restricti
 patterns on the doubly linked list. Read and understand the implementation. Then read and understand
 the unit tests that ensure the stack and queue work properly.
 
+Java:
 - `java/test/edu/berkeley/cs/util/Stack_T.java`
 - `java/test/edu/berkeley/cs/util/Queue_T.java`
+
+Python:
+- `python/test/util/stack.java`
+- `python/test/util/queue.java`
 
 Calculator
 ----------
@@ -85,8 +103,7 @@ in.
   is empty
 - Result is single element remaining on top of value stack
 
-Implement the above algorithm within `java/src/edu/berkeley/cs/app/Calculator.java`. Your
-implementation should support the following operations:
+Implement the above algorithm. Your implementation should support the following operations:
 
 - Addition
 - Subtraction
@@ -94,7 +111,11 @@ implementation should support the following operations:
 - Division
 - Exponents (`^`)
 
-Some starter code is already available in order to make this task easier for you.
+Some starter code is already available in order to make this task easier for you. The files you will
+need (depending on the language you are working in) for this exercise are:
+
+- Java: `java/src/edu/berkeley/cs/app/Calculator.java`
+- Python: `python/src/app/calculator.py`
 
 ### Extra Credit
 The above algorithm doesn't support parenthesis and therefore cannot support expressions where the
@@ -123,5 +144,12 @@ Testing your code
 Tests have already been written to help you ensure that your code works. The following commands will
 be used to test and grade your code:
 
+Java:
+
     $ bazel test java/test/edu/berkeley/cs/util:{linkedlist,splaylist,stack,queue}
     $ bazel test java/test/edu/berkeley/cs/app:calculator
+
+Python:
+
+    $ bazel test python/test/util:{linkedlist,splaylist,stack,queue}
+    $ bazel test python/test/app:calculator

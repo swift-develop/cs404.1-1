@@ -4,6 +4,10 @@ In this task, you will complete a series of shell scripts. To get you started, e
 file along with the appropriate Bazel configuration has already been setup for you in the `shell`
 directory. You simply need to fill out each file with the appropriate code.
 
+Note: some students have reported issues with working with `bash` under Windows. For Windows users,
+it is recommended to use the [Linux Subsystem](https://docs.microsoft.com/en-us/windows/wsl/faq) to
+get a native Linux environment under Windows.
+
 `survey.md` (optional)
 ----------------------
 Add responses to the questions in `survey.md`, located in the top-level root of the repository.

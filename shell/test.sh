@@ -174,4 +174,12 @@ EOF
     assert_equals 2 $num
 }
 
+function test_stdio_not_a_directory() {
+    disable_errexit
+    $stdio_path /dev/null
+    if [[ $? != 1 ]]; then
+        fail 'stdio.sh with non directory argument did not result in exit status 1'
+    fi
+}
+
 run_suite "Program 1 Test Suite"

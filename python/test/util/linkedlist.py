@@ -46,7 +46,7 @@ class LinkedListTest(unittest.TestCase):
         self.assertEqual(0, self.list.front())
         self.assertEqual(1, self.list.back())
 
-        self.list.insert_front(2)
+        self.list.insert_end(2)
         self.assertEqual(3, self.list.size())
 
         self.assertEqual(0, self.list.front())

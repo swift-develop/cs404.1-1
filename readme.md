@@ -85,6 +85,25 @@ hosting platform.
   ```
   - You will now have a directory named `cs404.1` where you executed the command above. This is your
     assignment directory where you will do your work.
+- Configure `git` properly
+  - Tell `git` who you are (replace my information with yours)
+    ```
+    git config --global user.name 'Faraaz Sareshwala'
+    git config --global user.email 'fsareshwala@berkeley.edu'
+    ```
+  - Tell `git` to fix whitespace problems for you:
+    ```
+    git config --global core.whitespace fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    ```
+  - Tell `git` to update line endings automatically once you commit your changes:
+    - Mac/Linux
+      ```
+      git config --global core.autocrlf input
+      ```
+    - Windows
+      ```
+      git config --global core.autocrlf true
+      ```
 - Identify yourself within your repository
   - Add your name to the `name.md` file in the top level root of the repository
   - Commit the addition and push the change to GitHub

@@ -20,10 +20,10 @@ public abstract class Sort<T extends Comparable> {
     return v.compareTo(w) < 0;
   }
 
-  protected void swap(T[] a, int i, int j) {
+  protected void swap(T[] input, int i, int j) {
     swaps++;
-    T t = a[i];
-    a[i] = a[j];
-    a[j] = t;
+    T t = input[i];
+    input[i] = input[j];
+    input[j] = t;
   }
 }

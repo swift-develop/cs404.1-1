@@ -13,10 +13,12 @@ function main() {
     )
 
     python_blessed=(
-        "python.src"
         "Enum"
-        "unittest"
+        "math"
+        "python.src"
+        "python.test"
         "random"
+        "unittest"
     )
 
     error_message="The following imports are invalid (you may not use the standard library):"

@@ -8,7 +8,7 @@ class Utilities:
         array = []
 
         for i in range(size):
-            array.remove(random.randrange(size**2))
+            array.append(random.randrange(size**2))
 
         return array
 

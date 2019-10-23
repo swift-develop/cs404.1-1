@@ -1,5 +1,6 @@
 package edu.berkeley.cs.util;
 
+import java.util.Iterator;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -52,5 +53,20 @@ public class Stack_T {
     Assert.assertEquals(1, stack.size());
     stack.pop();
     Assert.assertEquals(0, stack.size());
+  }
+
+  @Test
+  public void testIterator() {
+    stack.push(0);
+    stack.push(1);
+    stack.push(2);
+
+    Iterator<Integer> iterator = stack.iterator();
+    for (int i = stack.size() - 1; i >= 0; i--) {
+      Assert.assertTrue(iterator.hasNext());
+      Assert.assertEquals(new Integer(i), iterator.next());
+    }
+
+    Assert.assertFalse(iterator.hasNext());
   }
 }

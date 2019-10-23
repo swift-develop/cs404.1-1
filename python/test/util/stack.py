@@ -42,6 +42,13 @@ class StackTest(unittest.TestCase):
         self.stack.pop()
         self.assertEqual(0, self.stack.size())
 
+    def test_iterator(self):
+        size = 5
+        for i in range(size):
+            self.stack.push(i)
+
+        self.assertEqual(list(reversed(range(size))), list(iter(self.stack)))
+
 
 if __name__ == '__main__':
     unittest.main()

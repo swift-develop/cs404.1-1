@@ -1,6 +1,41 @@
 package edu.berkeley.cs.util;
 
-public class LinkedList<T> {
+import java.util.Iterator;
+
+public class LinkedList<T> implements Iterable<T> {
+  static class ListNode<T> {
+    ListNode<T> prev;
+    ListNode<T> next;
+    T value;
+
+    ListNode(T value) {
+      this.value = value;
+    }
+  }
+
+  ListNode<T> head;
+  ListNode<T> tail;
+  private int size = 0;
+
+  @Override
+  public Iterator<T> iterator() {
+    return new Iterator<T>() {
+      ListNode<T> current = head;
+
+      @Override
+      public boolean hasNext() {
+        return current != null;
+      }
+
+      @Override
+      public T next() {
+        T value = current.value;
+        current = current.next;
+        return value;
+      }
+    };
+  }
+
   public void insertFront(T value) {}
 
   public void insertEnd(T value) {}

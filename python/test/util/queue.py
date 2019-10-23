@@ -42,6 +42,13 @@ class QueueTest(unittest.TestCase):
         self.queue.dequeue()
         self.assertEqual(0, self.queue.size())
 
+    def test_iterator(self):
+        size = 5
+        for i in range(size):
+            self.queue.enqueue(i)
+
+        self.assertEqual(list(range(size)), list(iter(self.queue)))
+
 
 if __name__ == '__main__':
     unittest.main()

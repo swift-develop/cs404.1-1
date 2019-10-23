@@ -1,5 +1,6 @@
 package edu.berkeley.cs.util;
 
+import java.util.Iterator;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -52,5 +53,20 @@ public class Queue_T {
     Assert.assertEquals(1, queue.size());
     queue.dequeue();
     Assert.assertEquals(0, queue.size());
+  }
+
+  @Test
+  public void testIterator() {
+    queue.enqueue(0);
+    queue.enqueue(1);
+    queue.enqueue(2);
+
+    Iterator<Integer> iterator = queue.iterator();
+    for (int i = 0; i < queue.size(); i++) {
+      Assert.assertTrue(iterator.hasNext());
+      Assert.assertEquals(new Integer(i), iterator.next());
+    }
+
+    Assert.assertFalse(iterator.hasNext());
   }
 }

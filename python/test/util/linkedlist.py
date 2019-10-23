@@ -141,6 +141,13 @@ class LinkedListTest(unittest.TestCase):
         for i in range(size):
             self.assertTrue(self.list.contains(i))
 
+    def test_iterator(self):
+        size = 5
+        for i in range(size):
+            self.list.insert_end(i)
+
+        self.assertEqual(list(range(size)), list(iter(self.list)))
+
 
 if __name__ == '__main__':
     unittest.main()

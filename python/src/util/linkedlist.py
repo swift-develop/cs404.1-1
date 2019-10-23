@@ -1,5 +1,36 @@
 class LinkedList:
 
+    class ListNode:
+
+        def __init__(self, value):
+            self.value = value
+            self.prev = None
+            self.next = None
+
+    class LinkedListIterator:
+
+        def __init__(self, head):
+            self.current = head
+
+        def __iter__(self):
+            return self
+
+        def __next__(self):
+            if self.current is None:
+                raise StopIteration
+
+            value = self.current.value
+            self.current = self.current.next
+            return value
+
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.list_size = 0
+
+    def __iter__(self):
+        return self.LinkedListIterator(self.head)
+
     def insert_front(self, value):
         pass
 

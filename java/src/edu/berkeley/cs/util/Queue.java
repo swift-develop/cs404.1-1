@@ -1,6 +1,8 @@
 package edu.berkeley.cs.util;
 
-class Queue<T> {
+import java.util.Iterator;
+
+public class Queue<T> implements Iterable<T> {
   private LinkedList<T> list;
 
   public Queue() {
@@ -29,5 +31,10 @@ class Queue<T> {
 
   public boolean isEmpty() {
     return list.isEmpty();
+  }
+
+  @Override
+  public Iterator<T> iterator() {
+    return list.iterator();
   }
 }

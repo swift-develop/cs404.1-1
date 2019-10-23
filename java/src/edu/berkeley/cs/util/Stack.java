@@ -1,6 +1,8 @@
 package edu.berkeley.cs.util;
 
-public class Stack<T> {
+import java.util.Iterator;
+
+public class Stack<T> implements Iterable<T> {
   private LinkedList<T> list;
 
   public Stack() {
@@ -29,5 +31,10 @@ public class Stack<T> {
 
   public boolean isEmpty() {
     return list.isEmpty();
+  }
+
+  @Override
+  public Iterator<T> iterator() {
+    return list.iterator();
   }
 }

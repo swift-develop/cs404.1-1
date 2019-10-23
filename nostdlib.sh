@@ -9,6 +9,7 @@ function join() {
 function main() {
     java_blessed=(
         "java.util.Arrays"
+        "java.util.Iterator"
         "java.util.Random"
     )
 

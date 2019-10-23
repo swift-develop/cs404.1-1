@@ -1,5 +1,6 @@
 package edu.berkeley.cs.util;
 
+import java.util.Iterator;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -169,5 +170,20 @@ public class LinkedList_T {
     for (int i = 0; i < size; i++) {
       Assert.assertTrue(list.contains(i));
     }
+  }
+
+  @Test
+  public void testIterator() {
+    list.insertEnd(0);
+    list.insertEnd(1);
+    list.insertEnd(2);
+
+    Iterator<Integer> iterator = list.iterator();
+    for (int i = 0; i < list.size(); i++) {
+      Assert.assertTrue(iterator.hasNext());
+      Assert.assertEquals(new Integer(i), iterator.next());
+    }
+
+    Assert.assertFalse(iterator.hasNext());
   }
 }

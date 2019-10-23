@@ -6,6 +6,12 @@ class Queue:
     def __init__(self):
         self.list = LinkedList()
 
+    def __iter__(self):
+        return iter(self.list)
+
+    def __next__(self):
+        return self.list.__next__()
+
     def __init(self, value):
         self.list = value
 

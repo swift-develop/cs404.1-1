@@ -13,8 +13,8 @@ public class LinkedList<T> implements Iterable<T> {
     }
   }
 
-  ListNode<T> head;
-  ListNode<T> tail;
+  protected ListNode<T> head;
+  protected ListNode<T> tail;
   private int size = 0;
 
   @Override

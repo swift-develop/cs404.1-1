@@ -28,10 +28,10 @@ public class LinkedList<T> implements Iterable<T> {
       }
 
       @Override
-      public T next() {
-        T value = current.value;
+      public ListNode<T> next() {
+        ListNode<T> prev = current;
         current = current.next;
-        return value;
+        return prev;
       }
     };
   }
